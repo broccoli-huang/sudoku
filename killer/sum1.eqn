@@ -1,0 +1,8 @@
+INORDER = a00 a01 a02 a03;
+OUTORDER = f00 f01 f02 f03 f04 f05;
+f00 = 0;
+f01 = 0;
+f02 = a00;
+f03 = a01;
+f04 = a02;
+f05 = a03;

@@ -1,0 +1,6 @@
+INORDER = a b c;
+OUTORDER = F;
+F = (!new_n5_ * c) + (new_n5_ * !c);
+new_n5_ = new_n6_;
+new_n6_ = a + b;
+

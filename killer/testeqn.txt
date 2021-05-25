@@ -1,0 +1,8 @@
+# Equations for "testeqn" written by ABC on Tue May 25 19:04:13 2021
+INORDER = a b c;
+OUTORDER = F;
+new_n5_ = !a * !b;
+new_n6_ = c * new_n5_;
+new_n7_ = !c * !new_n5_;
+F = new_n6_ + new_n7_;
+
