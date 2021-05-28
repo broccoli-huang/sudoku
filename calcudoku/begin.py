@@ -21,6 +21,12 @@ def neq(x,y):  # x, y: block_no
     a, b, c, d = 4*x-3, 4*x-2, 4*x-1, 4*x
     e, f, g, h = 4*y-3, 4*y-2, 4*y-1, 4*y
     lst=[
+        [-a,-b,-c,-d,-e,-f,-g,-h],
+        [-a,-b,-c,d,-e,-f,-g,h],
+        [-a,-b,c,-d,-e,-f,g,-h],
+        [-a,-b,c,d,-e,-f,g,h],
+        [-a,b,-c,-d,-e,f,-g,-h],
+        [-a,b,-c,d,-e,f,-g,h],
         [-a,b,c,-d,-e,f,g,-h],
         [-a,b,c,d,-e,f,g,h],
         [a,-b,-c,-d,e,-f,-g,-h],
@@ -29,7 +35,8 @@ def neq(x,y):  # x, y: block_no
         [a,-b,c,d,e,-f,g,h],
         [a,b,-c,-d,e,f,-g,-h],
         [a,b,-c,d,e,f,-g,h],
-        [a,b,c,-d,e,f,g,-h]
+        [a,b,c,-d,e,f,g,-h],
+        [a,b,c,d,e,f,g,h]
     ]
     return translate(lst)
 
@@ -46,6 +53,7 @@ if __name__ == '__main__':
 
     URL = input('URL:')
     info = get_info(URL)
+    print(info)
 
     if isinstance(info,str):
         print(info)
