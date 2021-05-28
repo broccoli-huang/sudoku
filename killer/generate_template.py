@@ -31,7 +31,6 @@ def neq(x,y):  #x,y:block_no
     ]
     return translate(lst)
 
-
 # Main
 
 content='p cnf ? ?\n'
