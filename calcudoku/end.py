@@ -53,4 +53,8 @@ for row in range(size):
         row_ans_lst.append(val)
     ans_lst.append(row_ans_lst)
 
-print(ans_lst)
+
+for i in range(len(ans_lst)):
+    for j in range(len(ans_lst)):
+    	print(ans_lst[i][j],end = ' ')
+    print('\n',end = '')
